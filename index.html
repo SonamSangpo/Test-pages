@@ -26,17 +26,31 @@
 </head>
 
 <body>
+
     <div id="body-wrap">
-        <div id="nav-wrapper" style="z-index: 980;" uk-sticky="bottom: #offset">
-            <div id="nav">
-                <ul>
-                    <li><a href="#watch" uk-scroll><i class="fa fa-play" aria-hidden="true"></i><span>Watch</span></a></li>
-                    <li><a href="#listen" uk-scroll><i class="fa fa-music" aria-hidden="true"></i><span>Listen</span></a></li>
-                    <li><a href="#about" uk-scroll><i class="fa fa-info-circle" aria-hidden="true"></i><span>About</span></a></li>
-                    <li><a href="#contact" uk-scroll><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Contact</span></a></li>
-                </ul>
-            </div>
+        <div class="" style="" uk-sticky="top: 90vh; animation: uk-animation-slide-top;">
+            <nav class="uk-navbar-container" style="z-index: -100; background: none;" uk-navbar>
+                <!--<div class="uk-navbar-left" >
+
+                    <a class="uk-navbar-item uk-logo" href="#"><img data-src="images/unisonixs-small.png" width="100px" height="" alt="" uk-img uk-visible@l></a>
+                </div>-->
+                <div id="nav" class="uk-navbar-center ">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#watch" uk-scroll><i class="fa fa-play" aria-hidden="true"></i><span>Projects</span></a></li>
+                        <li><a href="#listen" uk-scroll><i class="fa fa-music" aria-hidden="true"></i><span>Music</span></a></li>
+                        <li><a href="#about" uk-scroll><i class="fa fa-info-circle" aria-hidden="true"></i><span>About</span></a></li>
+                        <li><a href="#contact" uk-scroll><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Contact</span></a></li>
+                    </ul>
+                </div>
+                <!--<div class="uk-navbar-right" uk-hidden@m>
+
+                   <a href="https://soundcloud.com/unisonixs" class="uk-icon-link uk-margin-large-right" uk-icon="icon: soundcloud; ratio: 2" ></a>
+                       
+                   
+                </div>-->
+            </nav>
         </div>
+
 
         <div class="uk-container">
 
@@ -44,65 +58,111 @@
 
 
 
+            <div id="particles-js" class="" style="height: 100vh; width: inherit; top: 0; left: 0; right: 0; bottom: 0; position: absolute; position: fixed; "></div>
 
-            <div id="particles-js" class="uk-cover-container uk-height-viewport page" uk-height-viewport>
+            <!-- <div id="particles-js" class="uk-cover-container uk-height-viewport page" uk-height-viewport>-->
 
 
 
-
+            <div id="home" class="uk-cover-container uk-height-viewport page" uk-height-viewport>
                 <div class="uk-position-center uk-position-small uk-text-center" uk-grid>
-                    <img src="images/unisonixs-logo.png" style="width: 40%;" class="uk-margin">
-                    <p class="uk-align-center">Unisonixs Creates Atmospheric Soundscapes and Audio Design for Film and Digital Productions</p>
+                    <img src="images/unisonixs-logo.png" class="uk-margin">
+                    <p class="uk-align-center uk-text-large">Online and On Location, Unisonixs Provides the Perfect Sounds for Your Production  </p>
+                    <p id="homenav" class="uk-align-center">
+
+
+                        <a href="#watch" uk-scroll><i class="fa fa-play" aria-hidden="true"></i> <span uk-visible@l>Projects</span></a>
+                        <a href="#listen" uk-scroll><i class="fa fa-music" aria-hidden="true"></i> <span uk-visible@l>Music</span></a>
+                        <a href="#about" uk-scroll><i class="fa fa-info-circle" aria-hidden="true"></i> <span uk-visible@l>About</span></a>
+                        <a href="#contact" uk-scroll><i class="fa fa-envelope-o" aria-hidden="true"></i> <span uk-visible@l>Contact</span></a>
+                    </p>
+                    <!-- BACKUPPPP<p id="homenav" class="uk-align-center">
+
+
+                        <span> <a href="#watch" uk-scroll><i class="fa fa-play" aria-hidden="true"></i> <span>Watch</span></a> </span>
+                        <span class="uk-margin-left"> <a href="#listen" uk-scroll><i class="fa fa-music" aria-hidden="true"></i> <span>Listen</span></a> </span>
+                        <span class="uk-margin-left"> <a href="#about" uk-scroll><i class="fa fa-info-circle" aria-hidden="true"></i> <span>About</span></a> </span>
+                        <span class="uk-margin-left"> <a href="#contact" uk-scroll><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Contact</span></a></span>
+                    </p>-->
                 </div>
 
 
 
 
+
             </div>
-            <!--end particles 1-->
+            
 
         </div>
 
 
-        <div id="watch" class="uk-position-relative uk-height-viewport uk-visible-toggle uk-light" uk-slider="center: true">
+        <div id="watch" class="uk-height-viewport" style="">
 
-            <ul class="uk-slider-items uk-grid">
-                <li class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img src="images/demo-reel.jpg" alt="">
-                        <div class="uk-position-center uk-panel">
-                            <a href="vid1.html"><span uk-icon="icon: play; ratio: 4" class=""></span></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img src="images/sky-eye.jpg" alt="">
-                        <div class="uk-position-center uk-panel">
-                            <a href="vid2.html"><span uk-icon="icon: play; ratio: 4" class=""></span></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img src="images/timeless.jpg" alt="">
-                        <div class="uk-position-center uk-panel">
-                            <a href="vid3.html"><span uk-icon="icon: play; ratio: 4" class=""></span></a>
-                        </div>
-                    </div>
-                </li>
+      
 
-            </ul>
 
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+<div class="" style="margin-top: -60px;" uk-slider="center: true">
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" >
+
+                 <ul class="uk-slider-items uk-grid-large uk-grid-match uk-grid" style="height: 80vh; min-height: 200px">
+                    <li class="uk-width-3-4">
+                        <div class="uk-cover-container">
+                            <img src="images/demo-reel.jpg" alt="" uk-cover>
+                            <div class="uk-position-center uk-position-medium uk-text-center">
+                                 <a href="vid1.html"><span uk-icon="icon: play; ratio: 4" class="" ></span></a>
+                                
+                            </div>
+                             <div class="uk-position-bottom-center uk-position-medium uk-text-center">
+                                 <p class="uk-h2" >Demo Reel</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-3-4">
+                        <div class="uk-cover-container">
+                            <img src="images/sky-eye.jpg" alt="" uk-cover>
+                             <div class="uk-position-center uk-position-medium uk-text-center">
+                                 <a href="vid2.html"><span uk-icon="icon: play; ratio: 4" class="" ></span></a>
+                                
+                            </div>
+                             <div class="uk-position-bottom-center uk-position-medium uk-text-center">
+                                 <p class="uk-h2">Sky Eye</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-3-4">
+                        <div class="uk-cover-container">
+                            <img src="images/timeless.jpg" alt="" uk-cover>
+                            <div class="uk-position-center uk-position-medium uk-text-center">
+                                 <a href="vid3.html"><span uk-icon="icon: play; ratio: 4" class=""></span></a>
+                                
+                            </div>
+                             <div class="uk-position-bottom-center uk-position-medium uk-text-center">
+                                 <p class="uk-h2" >Timeless</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <a class="uk-position-center-left uk-position-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-large uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
         </div>
-        <div class="uk-container uk-margin-large-top" id="listen">
 
 
 
-            <div class="uk-height-viewport uk-grid-small uk-text-center" uk-grid>
+
+
+        </div>
+        <div class="uk-container " id="listen">
+
+
+
+            <div class="uk-height-viewport uk-margin-large-top uk-grid-small uk-text-center" uk-grid>
 
                 <div class="uk-width-xlarge uk-margin-top uk-margin-auto">
                     <iframe width="100%" height="500px;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/462115&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -116,63 +176,115 @@
             <div id="about" class="uk-margin-xlarge-top">
 
 
-                <div class="uk-card-body uk-width-auto uk-margin-auto uk-height-viewport uk-padding-large">
-                    <h3 class="uk-card-title uk-text-center">About Unisonixs</h3>
-                    <ul class="uk-child-width-expand uk-width-large uk-margin-auto" uk-tab uk-switcher>
+               
+
+             
+                   <ul class="uk-child-width-expand uk-width-large uk-margin-auto" uk-tab="swiping: true;" uk-switcher="animation: uk-animation-fade" id="tabz" style="text-align: center">
                         <li><a href="#">Bio</a></li>
                         <li><a href="#">Gear</a></li>
                         <li><a href="#">Partners</a></li>
                     </ul>
+              
 
-                    <ul class="uk-switcher uk-width-xlarge uk-margin-auto">
-
-                        <li class="uk-text-justify"> <img style="width: 50%;" src="images/ngawang.jpeg" class="uk-align-right uk-margin-remove-adjacent" alt="">
-                            <p>I started out with House music /Hardcore around the year 1992 with some of the early software Screamtracker and Fasttracker.</p>
-                            <p>Later i started to like all the hardware and began to buy some synthesizers, compressors etc and a mixdesk and the sound slowly inproved. Over the years the computers became alot better and i started experimenting with softsynths like the Virus Powercore and as a DAW i was working in Steinberg Cubase/Nuendo and Propellorhead Reason. And i started with main stream Dance music and Trance. In the year 2004 i released my first record as a collab with my good friend Daniel Wanrooy. Later on more releases followed.</p>
-                            <p>About 3 years ago music for film came on my path and my interest for Dance music was slowly fading to the background.</p>
-                            <p>I still like the sound of the Dance music so these influences are still there in the music i make now, but i like a good balance of real instruments and synthesizers.</p>
-                        </li>
-                        <li>
-                            <div class="uk-column-1-2 uk-width-auto" style="border: 1px solid aqua">
-                                <ul class="uk-lis">
-                                    <li>Triangle</li>
-                                    <li>Piano</li>
-                                    <li>Tambourine</li>
-                                    <li>Flute</li>
-                                    <li>Fretless Bass</li>
-                                    <li>Korg Sound Thingy</li>
-                                    <li>Back Scratcher</li>
-                                    <li>Bouncy Ball</li>
-                                    <li>Tenor Sax</li>
-                                </ul>
+                <ul class="uk-switcher ">
+                    <li>
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@m" uk-grid>
+                            <div class="uk-card-media-left uk-cover-container">
+                                <img src="images/ngawang2.jpg" alt="" uk-cover>
+                                <canvas width="600" height="400"></canvas>
                             </div>
+                            <div>
+                                <div class="uk-card-body uk-overflow-auto ">
 
-                        </li>
-                        <li>
-                            <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Item</div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                    <h2 class="uk-heading">Bio</h2>
+                                    <p>I started out with House music /Hardcore around the year 1992 with some of the early software Screamtracker and Fasttracker.</p>
+                                    <p>Later i started to like all the hardware and began to buy some synthesizers, compressors etc and a mixdesk and the sound slowly inproved. Over the years the computers became alot better and i started experimenting with softsynths like the Virus Powercore and as a DAW i was working in Steinberg Cubase/Nuendo and Propellorhead Reason. And i started with main stream Dance music and Trance. In the year 2004 i released my first record as a collab with my good friend Daniel Wanrooy. Later on more releases followed.</p>
+                                    <p>About 3 years ago music for film came on my path and my interest for Dance music was slowly fading to the background.</p>
+                                    <p>I still like the sound of the Dance music so these influences are still there in the music i make now, but i like a good balance of real instruments and synthesizers.</p>
+                                    <a class="uk-button uk-button" href="#" s uk-switcher-item="next">Gear <span uk-icon="icon: chevron-right"></span></a>
+
+
                                 </div>
                             </div>
-                            <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card">
+                            <h2 class="uk-heading">Gear</h2>
+                            <div class="uk-grid-collapse uk-child-width-1-3@m " uk-grid>
+                                <div class="uk-card-body">
+                                    <i class="fas fa-memory"></i>
+                                    <h3 class="uk-heading">Hardware</h3>
+                                    <ul class="uk-list">
+                                        <li>I7 - six core proccesor PC with Samsung 950 EVO SSD</li>
+                                        <li>Presonus reference Monitors</li>
+                                        <li>Dayton 10-inch subwoofers</li>
+                                        <li>2 x TC Electronics Powercore</li>
+                                        <li>UAD 1 Pcie</li>
+                                        <li>SE Electronics Z5600 large dual-diaphragm valve microphone</li>
+                                    </ul>
+
                                 </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                <div class="uk-card-body">
+                                    <i class="fas fa-plug"></i>
+
+                                   <h3 class="uk-heading">Plugins</h3>
+                                    <ul class="uk-list">
+                                        <li>East West Library ( Composer Cloud)</li>
+                                        <li>Virus Powercore</li>
+                                        <li>Pultec EQ</li>
+                                        <li>Foley Library</li>
+                                        <li>Ambience indoor and outdoor</li>
+                                        <li>Cinematic FX Library</li>
+                                        <li>Analog modulation compressors and EQ</li>
+                                    </ul>
                                 </div>
+                                <div class="uk-card-body">
+                                   <i class="fas fa-desktop"></i>
+
+
+                                   <h3 class="uk-heading">DAW Software</h3>
+                                    <ul class="uk-list">
+                                        <li>Protools 12</li>
+                                        <li>Ableton Live 9</li>
+                                        <li>Audacity</li>
+                                        <li>iZotope RX 5 Audio Edito</li>
+                                        
+                                    </ul>
+                                </div>
+
                             </div>
-                        </li>
-                    </ul>
-                    <p class="uk-text-center" uk-margin>
-                        <a class="uk-button uk-button-default" href="#">View Resume</a>
+                                <a class="uk-button uk-button" href="#" s uk-switcher-item="previous"><span uk-icon="icon: chevron-left"></span> Bio</a>
+                                <a class="uk-button uk-button" href="#" s uk-switcher-item="next">Partners   <span uk-icon="icon: chevron-right"></span></a>
 
-                    </p>
-                </div>
+                        </div>
 
+                    </li>
+                    <li>
+                        <div class="uk-card">
+                            <h2 class="uk-heading">Partners</h2>
+                            <div class="uk-grid-collapse uk-child-width-1-2@m " uk-grid>
+                                <div class="uk-card-body" >
+                                    <img src="images/Sound%20for%20films%20logo.png" alt="">
+
+                                </div>
+                                <div class="uk-card-body">
+                                    <img src="images/FDV.png" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <img src="images/GONPO.png" alt="">
+                                </div>
+                                <div class="uk-card-body" >
+                                    <img src="images/chanmedia.png" alt="">
+                                </div>
+
+                            </div>
+                            <a class="uk-button uk-button" href="#" s uk-switcher-item="previous"><span uk-icon="icon: chevron-left"></span> Gear</a>
+
+                        </div>
+                    </li>
+                </ul>
+                 
 
             </div>
 
@@ -211,7 +323,7 @@
                         <a href="https://www.youtube.com/user/rheaven1" class="uk-icon-link uk-margin-large-right" uk-icon="icon: youtube; ratio: 2"></a>
                         <a href="#" class="uk-icon-link" style="font-size: 2.5rem; line-height: 0; vertical-align: middle"><i class="fab fa-imdb"></i></a>
                     </p>
-                    <p> <a href="#body-wrap" uk-scroll><img style="" src="images/unisonixs-small.png" class="uk-margin-large-top" alt=""></a>
+                    <p> <a href="#body-wrap" uk-scrollspy="cls: uk-animation-fade; repeat: true" uk-scroll><img style="" src="images/unisonixs-small.png" class="uk-margin-large-top" alt=""></a>
                     </p>
                 </div>
 
@@ -223,7 +335,7 @@
 
             <div id="footer" class="uk-text-center">
                 <p>&copy; <span id="date"></span> Unisonixs
-                    <!-- &middot; Site by <a href="http://chanmedia.uk/">Chan</a>-->
+                    &middot; Site by <a href="http://chanmedia.uk/">Chan Media</a>
                 </p>
             </div>
 

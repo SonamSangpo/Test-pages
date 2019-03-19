@@ -1,48 +1,73 @@
 body {
 
-   background: linear-gradient(270deg, #506861, #27272f);
-background-size: 400% 400%;
+    background: linear-gradient(270deg, #506861, #27272f);
+    background-size: 400% 400%;
 
--webkit-animation: AnimationName 19s ease infinite;
--moz-animation: AnimationName 19s ease infinite;
--o-animation: AnimationName 19s ease infinite;
-animation: AnimationName 19s ease infinite;
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    -o-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 4% 0%
+        }
+
+        50% {
+            background-position: 97% 100%
+        }
+
+        100% {
+            background-position: 4% 0%
+        }
+    }
+
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 4% 0%
+        }
+
+        50% {
+            background-position: 97% 100%
+        }
+
+        100% {
+            background-position: 4% 0%
+        }
+    }
+
+    @-o-keyframes AnimationName {
+        0% {
+            background-position: 4% 0%
+        }
+
+        50% {
+            background-position: 97% 100%
+        }
+
+        100% {
+            background-position: 4% 0%
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 4% 0%
+        }
+
+        50% {
+            background-position: 97% 100%
+        }
+
+        100% {
+            background-position: 4% 0%
+        }
+    }
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-}
 
 
 
-#nav-wrapper {
-    background-color: ;
-    /* for visualization purposes */
-    text-align: center;
-    width: 100vw;
-    position: absolute;
-    top: 70vh;
 
-
-
-}
 
 
 p,
@@ -59,6 +84,19 @@ h3 {
 }
 
 
+#homenav a {
+    display: inline-block;
+    padding: 26px 40px;
+    text-decoration: none;
+    color: #B2B2B2;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+}
+
+#homenav span {
+    padding-left: 20px;
+}
 
 
 #nav {
@@ -92,11 +130,26 @@ h3 {
     display: block;
     padding: 26px 40px;
     text-decoration: none;
-    color: #666;
+    color: #B2B2B2;
+    font-size: 1.3rem;
 
 }
 
+#watch {padding-top: 20vh;position: relative}
 
+#listen, #about {padding-top: 10vh;position: relative}
+
+#about i {font-size: 2.3rem;}
+
+#tabz li.uk-active a{border-color: white; border-width: 2px; color: white; }
+
+@media all and (min-width: 839px) {
+
+    #home img {
+        width: 70%;
+    }
+
+}
 
 @media all and (max-width: 839px) {
 
@@ -112,15 +165,22 @@ h3 {
         padding-left: 7px;
     }
 
+    #homenav a {
+        padding: 24px;
+        
 
+
+    }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
+    #homenav a {width: 40%;} 
+}
+
+@media all and (max-width: 590px) {
 
 
-    #nav span {
-        display: none
-    }
+   
 
     #nav ul {
         list-style-type: none;
@@ -139,6 +199,16 @@ h3 {
         padding: 26px;
         text-decoration: none;
 
+    }
+
+    #homenav a {
+        padding: 20px; 
+            width: 30%;
+
+
+    }
+     #nav a  span{
+         display: none; 
     }
 
 }
