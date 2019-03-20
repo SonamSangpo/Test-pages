@@ -179,8 +179,10 @@ h3 {
 
 @media all and (max-width: 590px) {
 
-
-   
+    body { background: linear-gradient(270deg, #506861, #27272f);}
+    #home img {
+        width: 50%;
+    }
 
     #nav ul {
         list-style-type: none;
