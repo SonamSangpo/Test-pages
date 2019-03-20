@@ -140,8 +140,19 @@ h3 {
 #listen, #about {padding-top: 10vh;position: relative}
 
 #about i {font-size: 2.3rem;}
+#about a:hover {color: #fff;}
+#about em {font-weight:600; color: lightgray; font-size: 1.2rem;}
 
 #tabz li.uk-active a{border-color: white; border-width: 2px; color: white; }
+
+#contact a,#contact a:hover {color: #B2B2B2;}
+
+#footer a,#footer a:hover {color: #fff;}
+
+
+/*========Media Queries ===========*/
+
+
 
 @media all and (min-width: 839px) {
 
@@ -179,9 +190,9 @@ h3 {
 
 @media all and (max-width: 590px) {
 
-    body { background: linear-gradient(270deg, #506861, #27272f);}
+    body { background:   #27272f;}
     #home img {
-        width: 50%;
+        width: 70%;
     }
 
     #nav ul {
@@ -205,10 +216,15 @@ h3 {
 
     #homenav a {
         padding: 20px; 
-            width: 30%;
+            width: 25%;
 
 
     }
+    #homenav span {font-size: 1rem;}
+    
+    
+    
+    
      #nav a  span{
          display: none; 
     }
